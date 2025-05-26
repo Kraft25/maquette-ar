@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maquette 3D en AR</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <h1>Maquette Architecture</h1>
+    <p>Scannez le QR Code et ouvrez cette page sur mobile pour voir en AR.</p>
+
+    <!-- Afficher le modèle 3D -->
+    <model-viewer
+        src="cat.glb"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        alt="Maquette 3D"
+        style="width: 100%; height: 500px;">
+        
+        <button slot="ar-button" style="background: white; border: none; padding: 10px; border-radius: 5px;">
+            👓 Voir en Réalité Augmentée
+        </button>
+    </model-viewer>
+</body>
+</html>
